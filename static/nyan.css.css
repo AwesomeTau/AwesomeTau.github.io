@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Alegreya);
-/*alegreya italic looks more elegant than slanted, but alegreya bold is too thicc*/
-@import url(https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap);
+<link type='text/css' href='http://fonts.googleapis.com/css?family=Lato:400,700' />
 /* chinese serif handled by noto quite well*/
 @import url(https://fonts.googleapis.com/css?family=Noto);
 /* "I would not marry someone who puts a newline between a curly brace and the end of a line." -- TheUltimate123 */ 
