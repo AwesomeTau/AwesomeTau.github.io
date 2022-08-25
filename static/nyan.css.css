@@ -1,9 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap%27); 
 @import url(https://fonts.googleapis.com/css?family=Noto);
-/*Color themes:
-blackpink -> #f0f,
-tropical -> # 64dfd7, #e0f4f4*/
 :root{--maincolor:#003d2b; --lightmain:#d7d7d7; --mainfont: Lato, sans-serif;}
 
 /*=======================*/
