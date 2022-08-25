@@ -1,4 +1,5 @@
-<link type='text/css' href='http://fonts.googleapis.com/css?family=Lato:400,700' />
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Lora);
 /* chinese serif handled by noto quite well*/
 @import url(https://fonts.googleapis.com/css?family=Noto);
 /* "I would not marry someone who puts a newline between a curly brace and the end of a line." -- TheUltimate123 */ 
