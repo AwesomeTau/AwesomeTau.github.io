@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Alegreya);
+/*alegreya italic looks more elegant than slanted, but alegreya bold is too thicc*/
+@import url(https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap);
+/* chinese serif handled by noto quite well*/
+@import url(https://fonts.googleapis.com/css?family=Noto);
 
 /*Color themes:
 blackpink -> #f0f,
