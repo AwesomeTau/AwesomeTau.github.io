@@ -46,7 +46,8 @@ a:visited {color: var(--maincolor);}
 
 /* me attempting to implement mdframed*/
 block {padding-left:10px; padding-right:10px; padding-top:5px;padding-bottom:5px;
-    border: 2.5px solid var(--maincolor); border-radius: 5px; border-width: 2px;
+    border: 2.5px solid var(--maincolor); border-radius: 0px; border-width: 0px;
+    /* above was border radius something and width */
     display:block; background-color: var(--lightmain);width:99%;}
 
 /*why not*/
