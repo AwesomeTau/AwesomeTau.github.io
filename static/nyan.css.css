@@ -23,7 +23,7 @@ div#navbar {background-color: var(--lightmain);
     border:1px solid transparent; border-radius:7px;}
 #navbar a {font-size:20px; font-family: var(--mainfont); color:var(--maincolor); margin-left:10px; margin-right:10px;}
 #navbar-left {font-size:20px; font-family: var(--mainfont); color: var(--maincolor);}
-#navbar-right {margin-left:80%; font-size:20px; font-family: var(--mainfont);
+#navbar-right {margin-left:50%; font-size:20px; font-family: var(--mainfont);
     color: var(--maincolor); text-align:right;}
 
 /* default */
