@@ -6,7 +6,8 @@
 /*Color themes:
 blackpink -> #f0f,
 tropical -> # 64dfd7, #e0f4f4*/
-:root {--maincolor:#000000; --lightmain:#003d2b; --mainfont: Alegreya,serif;}
+:root {--maincolor:#000000; --lightmain:#dfffde; --mainfont: Alegreya,serif;}
+/* #003d2b */
 
 /*=======================*/
 body {width: 100%; vertical-align: middle;
