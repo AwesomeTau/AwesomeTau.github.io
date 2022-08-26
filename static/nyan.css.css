@@ -25,10 +25,9 @@ div#navbar {background-color: var(--lightmain);
 #navbar-left {font-size:20px; font-family: var(--mainfont); color: var(--maincolor);}
 #navbar-right {margin-left:50%; font-size:20px; font-family: var(--mainfont);
     color: var(--maincolor); text-align:right;}
-ul li:hover{
-    background: #90EE90; 
-    font-weight: bold; 
-}
+ul#navigation .active {
+  font-weight: bold;
+} 
 
 /* default */
 div#content {padding:40px; background-color:transparent;}
