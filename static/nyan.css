@@ -1,12 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap%27); 
-
-@import url(https://fonts.googleapis.com/css?family=Noto);
+@import url(‘https://fonts.googleapis.com/css?family=Lato’);
+@import url(‘https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap%27’); 
+@import url(‘https://fonts.googleapis.com/css?family=Noto’);
 
 /*Color themes:
 blackpink -> #f0f,
 tropical -> # 64dfd7, #e0f4f4*/
-:root {--maincolor:#003d2b; --lightmain:#ebffe3; --mainfont: Alegreya,serif;}
+:root {--maincolor:#003d2b; --lightmain:#ebffe3; --mainfont: Lato,sans-serif;}
 /* #003d2b */
 
 /*=======================*/
@@ -62,3 +61,4 @@ div.fancy-links block {width:90%; padding:10px;border: 2.5px solid var(--maincol
 div.fancy-links a {display:block; font-size:14pt;}
 a#footnote-ref {}
 a#footnote-back {margin-left: 0.4rem;}
+
