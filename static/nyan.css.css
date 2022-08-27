@@ -32,6 +32,7 @@ div#navbar a{
             background-color: #ebffe3;
             color: ##003d2b;
             text-align: center;
+            margin-left: 50%; 
             font-size: 20px;
             padding: 10px;
          }
