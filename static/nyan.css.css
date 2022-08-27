@@ -29,15 +29,15 @@ div#navbar {background-color: var(--lightmain);
     color: var(--maincolor); text-align:right;}
 
 div#navbar a:hover {
-    background-color: #097969;
-    color: #000000;
+    background-color: --maincolor;
+    color: --lightmain;
 }
 div#navbar a{
-            background-color: #013220;
-            color: #000000;
+            background-color: --maincolor;
+            color: --lightmain;
             text-align: center;
             font-size: 15px;
-            padding: 0px;
+            padding: 20px;
          }
     
 
