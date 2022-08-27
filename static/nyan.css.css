@@ -28,10 +28,6 @@ div#navbar {background-color: var(--lightmain);
 #navbar-right {margin-left:50%; font-size:20px; font-family :var(--mainfont); 
     color: var(--maincolor); text-align:right;}
 
-div#navbar a:hover {
-    background-color: --maincolor;
-    color: --lightmain;
-}
 div#navbar a{
             background-color: --maincolor;
             color: --lightmain;
@@ -39,6 +35,11 @@ div#navbar a{
             font-size: 15px;
             padding: 20px;
          }
+
+div#navbar a:hover {
+    background-color: --maincolor;
+    color: --lightmain;
+}
     
 
 
