@@ -27,6 +27,18 @@ div#navbar {background-color: var(--lightmain);
 #navbar a {font-size:20px; font-family: var(--mainfont); color:var(--maincolor); margin-left:10px; margin-right:10px;}
 #navbar-right {margin-left:50%; font-size:20px; font-family :var(--mainfont); 
     color: var(--maincolor); text-align:right;}
+
+div#navbar a:hover {
+    background-color: #097969;
+    color: #000000;
+}
+div#navbar a{
+            background-color: #013220;
+            color: #000000;
+            text-align: center;
+            font-size: 15px;
+            padding: 10px;
+         }
     
 
 
