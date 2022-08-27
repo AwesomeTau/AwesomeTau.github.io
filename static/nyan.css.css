@@ -29,16 +29,16 @@ div#navbar {background-color: var(--lightmain);
     color: var(--maincolor); text-align:right;}
 
 div#navbar a{
-            background-color: --maincolor;
-            color: --lightmain;
+            background-color: #ebffe3;
+            color: ##003d2b;
             text-align: center;
             font-size: 15px;
             padding: 20px;
          }
 
 div#navbar a:hover {
-    background-color: --maincolor;
-    color: --lightmain;
+    background-color: #deffd1;
+    color: #003d2b;
 }
     
 
@@ -79,4 +79,3 @@ div.fancy-links block {width:90%; padding:10px;border: 2.5px solid var(--maincol
 div.fancy-links a {display:block; font-size:14pt;}
 a#footnote-ref {}
 a#footnote-back {margin-left: 0.4rem;}
-
