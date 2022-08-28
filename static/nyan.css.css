@@ -21,11 +21,11 @@ div#navbar {background-color: var(--lightmain);
     div#navbar a:hover 
     div#navbar a:link
     div#navbar a:visited
-    box-shadow: 0px 0px 30px 0px #dddddd; padding: 10px;width:1100px;
+    box-shadow: 0px 0px 30px 0px #dddddd; padding: 15px; width:1100px;
     position: fixed; top: 0px; z-index: 5; margin-top:10px;
     border:1px solid transparent; border-radius:7px;}
 #navbar a {font-size:20px; font-family: var(--mainfont); color:var(--maincolor); margin-left:10px; margin-right:10px;}
-#navbar-right {margin-left:30%; font-size:20px; font-family :var(--mainfont); 
+#navbar-right {margin-left:35%; font-size:20px; font-family :var(--mainfont); 
     color: var(--maincolor); text-align:right;}
 
 div#navbar a{
@@ -33,7 +33,7 @@ div#navbar a{
             color: ##003d2b;
             text-align: center; 
             font-size: 18px;
-            padding: 0.6em 1.75em 0.7em;
+            padding: 0.92em 1em 0.9em; 
          }
 
 div#navbar a:hover {
@@ -79,3 +79,5 @@ div.fancy-links block {width:90%; padding:10px;border: 2.5px solid var(--maincol
 div.fancy-links a {display:block; font-size:14pt;}
 a#footnote-ref {}
 a#footnote-back {margin-left: 0.4rem;}
+
+
