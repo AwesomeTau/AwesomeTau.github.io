@@ -25,7 +25,7 @@ div#navbar {background-color: var(--lightmain);
     position: fixed; top: 0px; z-index: 5; margin-top:10px;
     border:1px solid transparent; border-radius:7px;}
 #navbar a {font-size:20px; font-family: var(--mainfont); color:var(--maincolor); margin-left:10px; margin-right:10px;}
-#navbar-right {margin-left:40%; font-size:20px; font-family :var(--mainfont); 
+#navbar-right {margin-left:30%; font-size:20px; font-family :var(--mainfont); 
     color: var(--maincolor); text-align:right;}
 
 div#navbar a{
