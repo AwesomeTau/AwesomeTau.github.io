@@ -21,7 +21,7 @@ div#navbar {background-color: var(--lightmain);
     div#navbar a:hover 
     div#navbar a:link
     div#navbar a:visited
-    box-shadow: 0px 0px 30px 0px #dddddd; padding: 9px; width:1100px;
+    box-shadow: 0px 0px 30px 0px #dddddd; padding: 15px; width:1100px;
     position: fixed; top: 0px; z-index: 5; margin-top:10px;
     border:1px solid transparent; border-radius:7px;}
 #navbar a {font-size:20px; font-family: var(--mainfont); color:var(--maincolor); margin-left:10px; margin-right:10px;}
@@ -33,7 +33,7 @@ div#navbar a{
             color: ##003d2b;
             text-align: center; 
             font-size: 18px;
-            padding: 9.5px;
+            padding: 10px;
          }
 
 div#navbar a:hover {
