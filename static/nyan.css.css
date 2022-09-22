@@ -42,6 +42,9 @@ div#navbar a:hover {
 }
     
 
+img.rounded-corners{
+                border-radius:30px; 
+                }
 
 
 /* default */
