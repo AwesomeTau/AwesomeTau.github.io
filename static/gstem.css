@@ -1,89 +1,275 @@
-@import url(‘https://fonts.googleapis.com/css?family=Lato’);
-@import url(‘https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap%27’); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-/*Color themes:
-blackpink -> #f0f,
-tropical -> # 64dfd7, #e0f4f4*/
-:root {--maincolor:#003d2b; --lightmain:#ebffe3; --mainfont: Lato,sans-serif;}
-/* #003d2b */
-
-/*=======================*/
-body {width: 100%; vertical-align: middle;
-    background-color: white;font-family:  var(--mainfont); font-size:13pt;
-    opacity: 0.88; margin-top:50px;padding:0px;}
-
-/**/
-div#page-wrapper{height: auto; margin:auto; width:1100px;}
-
-/* navbar */
-div#navbar {background-color: var(--lightmain);
-    transition: all 0.5s; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s;
-    div#navbar a:hover 
-    div#navbar a:link
-    div#navbar a:visited
-    box-shadow: 0px 0px 30px 0px #dddddd; padding: 15px; width:1100px;
-    position: fixed; top: 0px; z-index: 5; margin-top:10px;
-    border:1px solid transparent; border-radius:7px;}
-#navbar a {font-size:20px; font-family: var(--mainfont); color:var(--maincolor); margin-left:10px; margin-right:10px;}
-#navbar-right {margin-left:25%; font-size:20px; font-family :var(--mainfont); 
-    color: var(--maincolor); text-align:right;}
-
-div#navbar a{
-            background-color: #ebffe3;
-            color: ##003d2b;
-            text-align: center; 
-            font-size: 18px;
-            padding: 0.92em 1em 0.9em; 
-         }
-
-div#navbar a:hover {
-    background-color: #deffd1;
-    color: #003d2b;
-}
-    
-
-figure{
-    width:150px;
-    height:150px;
-    border-radius:30%;
-    overflow:hidden;
+:root {
+    --maincolor: #003d2b;
+    --lightcolor: #ebffe3;
+    --accentcolor: #4caf50;
+    --backgroundcolor: #ffffff;
+    --mainfont: 'Roboto', sans-serif;
+    --shadowcolor: rgba(0, 0, 0, 0.1);
 }
 
+body {
+    width: 100%;
+    background-color: var(--backgroundcolor);
+    font-family: var(--mainfont);
+    font-size: 16px;
+    line-height: 1.6; /* Adjusted line-height */
+    color: var(--maincolor);
+    margin: 0;
+    padding: 0;
+}
 
-/* default */
-div#content {padding:40px; background-color:transparent;}
+#page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-/* color headings*/
-h1 {color:var(--maincolor);}
-h2 {color:var(--maincolor);}
-/*liink spam*/
-a:link {color: var(--maincolor);text-decoration:none;}
-a:hover {color: var(--maincolor);text-shadow: 0 0 1px var(--maincolor);}
-a:active {color: var(--maincolor); background-color: var(--lightmain); text-decoration: none;}
-a:visited {color: var(--maincolor);}
+/* Navbar */
+#navbar {
+    background-color: var(--lightcolor);
+    box-shadow: 0 2px 10px var(--shadowcolor);
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
 
-/* me attempting to implement mdframed*/
-block {padding-left:10px; padding-right:10px; padding-top:5px;padding-bottom:5px;
-    border: 2.5px solid var(--maincolor); border-radius: 0px; border-width: 0px;
-    /* above was border radius something and width */
-    display:block; background-color: var(--lightmain);width:100%;}
+#navbar-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-/*why not*/
-div#quote{display:block; margin-left:20%; margin-right:20%;margin-top:10px;
-    margin-bottom:10px; position:relative;}
+#navbar a {
+    font-size: 16px;
+    color: var(--maincolor);
+    text-decoration: none;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+    font-weight: 400;
+}
 
-/*inline text formatting shortcuts*/
-ch {display: inline; font-family: Noto, serif; font-size:12pt;} /*chinese*/
-i {font-style: italic;}
-cap { display:block;text-align: center; font-size:12pt;}
+#navbar a:hover {
+    color: var(--accentcolor);
+}
 
-/* copied from dchenmathcounts*/
-div.fancy-links {list-style-type: none;padding: 0;display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));}
-div.fancy-links block {width:90%; padding:10px;border: 2.5pxpx solid var(--maincolor); background-color: var(--lightmain);
-    border-width: 5px; border-radius:8px;margin:5px;}
-div.fancy-links a {display:block; font-size:14pt;}
-a#footnote-ref {}
-a#footnote-back {margin-left: 0.4rem;}
+/* Content */
+#content {
+    padding: 60px 20px 40px;
+}
 
+#main {
+    margin-top: 10px;
+}
 
+h1, h2, h3 {
+    color: var(--maincolor);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 42px;
+    border-bottom: 2px solid var(--accentcolor);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    color: var(--accentcolor);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--maincolor);
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--accentcolor);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: #388e3c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px var(--shadowcolor);
+}
+
+/* Card styles */
+.card {
+    background-color: var(--lightcolor);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--shadowcolor);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+    background-color: var(--lightcolor);
+    color: var(--maincolor);
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+/* Team section */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Added gap between items */
+}
+
+.team-member {
+    flex: 1 1 calc(33.333% - 20px); /* Updated to handle gap */
+    background-color: var(--lightcolor);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--shadowcolor);
+    transition: all 0.3s ease;
+    text-align: center;
+    max-width: 300px;
+    box-sizing: border-box; /* Ensure padding and margin are included in width */
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.team-img {
+    width: 160px;
+    height: 280px;
+    border-radius: 7.5%;
+    margin-bottom: 20px;
+}
+
+.team-info {
+    text-align: center;
+}
+
+.team-info h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.team-info p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Testimonials */
+#testimonials {
+    background-color: var(--lightcolor);
+    padding: 40px 20px;
+    margin-top: 70px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--shadowcolor);
+}
+
+#testimonials h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -10px;
+    font-size: 28px;
+}
+
+.testimonial {
+    background-color: var(--backgroundcolor);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadowcolor);
+}
+
+.testimonial p {
+    margin: 0;
+    line-height: 1.4; /* Adjusted line-height */
+}
+
+.testimonial p:first-of-type {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #navbar {
+        padding: 10px 20px;
+    }
+
+    #navbar-right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navbar a {
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    #content {
+        padding: 70px 20px 40px;
+    }
+
+    #main {
+        margin-top: 30px;
+    }
+
+    .team-member {
+        flex: 1 1 100%;
+    }
+
+    .team-info h3 {
+        font-size: 20px;
+    }
+
+    .team-info p {
+        font-size: 14px;
+    }
+}
