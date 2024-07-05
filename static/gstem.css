@@ -99,7 +99,7 @@ a {
 }
 
 a:hover {
-    color: var(--maincolor);
+    color: var (--maincolor);
 }
 
 /* Button styles */
@@ -224,6 +224,24 @@ footer {
 .testimonial p:first-of-type {
     font-style: italic;
     margin-bottom: 10px;
+}
+
+/* Logout Button styles */
+#logout-button {
+    background-color: var(--accentcolor); /* Accent color background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#logout-button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px var(--shadowcolor);
 }
 
 /* Responsive design */
