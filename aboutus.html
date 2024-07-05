@@ -13,11 +13,13 @@
             <a href="./index.html">
             <img src="./static/logo.png" alt="GammaSTEM Logo" style="width: 40px; height: 40px; position:absolute; left:20px; top: 10px;" />
             </a>
-            <a href="./index.html"> Home </a>
-            <a href="./aboutus.html"> About Us </a>
-            <a href="./register.html"> Register </a>
-            <a href="./schedule.html"> Schedule </a>
-            <a href="./contactus.html"> Contact</a>
+            <a href="./index.html">Home</a>
+            <a href="./aboutus.html">About Us</a>
+            <a href="./register.html">Register</a>
+            <a href="./schedule.html">Schedule</a>
+            <a href="./contactus.html">Contact</a>
+            <a href="./login.html">Login</a>
+            <span id="materials-tab" style="display: none;"><a href="./materials.html">Materials</a></span>
         </div>
     </div>
     
@@ -37,25 +39,29 @@
         </div>
     </div>
 
-        <div id="main">
-            <h1>Past Team</h1>
-            <div class="team-container">
-                <div class="team-member">
-                    <div class="team-info">
-                        <h3>Aarush Khare</h3>
-                    </div>
+    <div id="main">
+        <h1>Past Team</h1>
+        <div class="team-container">
+            <div class="team-member">
+                <div class="team-info">
+                    <h3>Aarush Khare</h3>
                 </div>
-                <div class="team-member">
-                    <div class="team-info">
-                    <h3>William Zhao</h3>
-                    </div>
-                </div>
-                <!-- Add more team members here -->
             </div>
+            <div class="team-member">
+                <div class="team-info">
+                    <h3>William Zhao</h3>
+                </div>
+            </div>
+            <!-- Add more past team members here -->
         </div>
-
-    
-
+    </div>
 </div>
+
+<script>
+    if (localStorage.getItem('loggedIn') === 'true') {
+        document.getElementById('materials-tab').style.display = 'inline';
+    }
+</script>
+
 </body>
 </html>
