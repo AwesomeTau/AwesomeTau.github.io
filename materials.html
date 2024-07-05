@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./static/gstem.css"/>
+    <title>GammaSTEM Members Area</title>
+    <link rel="icon" type="image/x-icon" href="./static/logo.png">
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="navbar">
+        <div id="navbar-right">
+            <a href="./index.html">
+                <img src="./static/logo.png" alt="GammaSTEM Logo" style="width: 40px; height: 40px; position:absolute; left:20px; top: 10px;" />
+            </a>
+            <a href="./index.html">Home</a>
+            <a href="./aboutus.html">About Us</a>
+            <a href="./register.html">Register</a>
+            <a href="./schedule.html">Schedule</a>
+            <a href="./contactus.html">Contact</a>
+            <a href="./login.html">Login</a>
+            <span id="members-tab" style="display: none;"><a href="./materials.html">Materials</a></span>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="main">
+            <h1>Materials</h1>
+            <div id="class-materials">
+                <!-- Class-specific content will be injected here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const classMaterials = {
+        'class1': `
+            <h2>AMC 8 Number Theory Course</h2>
+            <p>Here are the materials for Class 1.</p>
+            <!-- Add more materials for Class 1 here -->
+        `,
+        'class2': `
+            <h2>Introduction to Physics</h2>
+            <p>Here are the materials for Class 2.</p>
+            <!-- Add more materials for Class 2 here -->
+        `
+    };
+
+    if (localStorage.getItem('loggedIn') !== 'true') {
+        window.location.href = './login.html';
+    } else {
+        document.getElementById('members-tab').style.display = 'inline';
+        const userClass = localStorage.getItem('class');
+        document.getElementById('class-materials').innerHTML = classMaterials[userClass];
+    }
+</script>
+</body>
+</html>
