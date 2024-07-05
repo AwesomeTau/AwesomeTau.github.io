@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./static/gstem.css"/>
+    <title>GammaSTEM Login</title>
+    <link rel="icon" type="image/x-icon" href="./static/logo.png">
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="navbar">
+        <div id="navbar-right">
+            <a href="./index.html">
+                <img src="./static/logo.png" alt="GammaSTEM Logo" style="width: 40px; height: 40px; position:absolute; left:20px; top: 10px;" />
+            </a>
+            <a href="./index.html">Home</a>
+            <a href="./aboutus.html">About Us</a>
+            <a href="./register.html">Register</a>
+            <a href="./schedule.html">Schedule</a>
+            <a href="./contactus.html">Contact</a>
+            <a href="./login.html">Login</a>
+            <span id="members-tab" style="display: none;"><a href="./materials.html">Materials</a></span>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="main">
+            <h1>Login</h1>
+            <form id="login-form">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p id="login-message" style="color: red; display: none;">Incorrect password. Please try again.</p>
+            <button id="logout-button" style="display: none;">Logout</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const passwords = {
+        'pass1': 'class1',
+        'pass2': 'class2'
+    };
+
+    if (localStorage.getItem('loggedIn') === 'true') {
+        document.getElementById('members-tab').style.display = 'inline';
+        document.getElementById('logout-button').style.display = 'inline';
+    }
+
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const password = document.getElementById('password').value;
+
+        if (passwords[password]) {
+            localStorage.setItem('loggedIn', 'true');
+            localStorage.setItem('class', passwords[password]);
+            window.location.href = './index.html';
+        } else {
+            document.getElementById('login-message').style.display = 'block';
+        }
+    });
+
+    document.getElementById('logout-button').addEventListener('click', function() {
+        localStorage.removeItem('loggedIn');
+        localStorage.removeItem('class');
+        window.location.href = './login.html';
+    });
+</script>
+</body>
+</html>
