@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="svg">
+<head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="./static/gstem.css"  />
+<link rel="stylesheet" type="text/css" href="./static/gstem.css" />
 <title>GammaSTEM</title>
 <link rel="icon" type="image/x-icon" href="./static/logo.png"> 
 </head>
@@ -11,23 +12,30 @@
         <div id="navbar-right">
             <a href="./index.html">
                 <img src="./static/logo.png" alt="GammaSTEM Logo" style="width: 40px; height: 40px; position:absolute; left:20px; top: 10px;" />
-                </a>
-        <a href="./index.html"> Home </a>
-        <a href="./aboutus.html"> About Us </a>
-        <a href="./register.html"> Register </a>
-        <a href="./schedule.html"> Schedule </a>
-        <a href="./contactus.html"> Contact </a>
+            </a>
+            <a href="./index.html">Home</a>
+            <a href="./aboutus.html">About Us</a>
+            <a href="./register.html">Register</a>
+            <a href="./schedule.html">Schedule</a>
+            <a href="./contactus.html">Contact</a>
+            <a href="./login.html">Login</a>
+            <span id="materials-tab" style="display: none;"><a href="./materials.html">Materials</a></span>
         </div>
     </div>
+    
     <div id="content">
         <div id="main">
-
-<h1>Contact Us</h1>
+            <h1>Contact Us</h1>
             <p>You can contact us at <a href="mailto:gammastem3@gmail.com">gammastem3@gmail.com</a>.</p>
-
         </div>
     </div>
 </div>
-</div>
+
+<script>
+    if (localStorage.getItem('loggedIn') === 'true') {
+        document.getElementById('materials-tab').style.display = 'inline';
+    }
+</script>
+
 </body>
 </html>
